@@ -14,8 +14,8 @@ header, footer {
     color: #654321;
 }
 
-/* dropshadow for img */
-#daily {
+/* dropshadow for img - CHANGED TO #my-image */
+#my-image {
     box-shadow: 0px 0px 2px 1px black;
 }
 
