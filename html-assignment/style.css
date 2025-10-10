@@ -1,12 +1,10 @@
-/* styles.css */
-
 /* Inheritance - body styling */
 body {
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
 }
 
-/* Select multiple elements - header and footer */
+/* select multiple elements - header and footer */
 header, footer {
     background-color: #ffee00;
 }
@@ -17,7 +15,7 @@ header, footer {
 }
 
 /* dropshadow for img */
-#my-image {
+#daily {
     box-shadow: 0px 0px 2px 1px black;
 }
 
@@ -31,7 +29,7 @@ ul {
     background-color: rgb(178, 129, 32);
 }
 
-/* Navigation styling */
+/* navigation styling */
 nav ul {
   list-style-type: none;
   padding: 0;
