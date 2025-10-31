@@ -1,115 +1,209 @@
-::before
-::after {
-    box-sizing: border-box;
+/* main typeface used */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #94c7c2; /* softer teal */
+  margin: 0;
+  padding: 0;
+  color: #222;
 }
 
+/* aligning the header */
+header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* WHY CANT I UNCROP THE BOTTOM OF THE IMG MAN */
+.cover {
+  position: relative;
+  overflow: hidden;
+}
+/* IM GONNA CRASH OUT AAAA */
+.cover img {
+  width: 66.3%;
+  height: 66.3%;
+  object-fit: cover;          /* no stretching */
+  object-position: center 60%;
+}
+
+/* site title properties */
 .site-title {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
-  font-size: 50px;
-  font-weight: thin;
+  color: #f3f3f3;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-body {
-     font-family: 'Times New Roman', Times, serif, sans-serif;
-  background-color: #aad4cf;
+/* nav bar pos and color */
+nav {
+  background-color: #d3e4e2; /* pale gray-blue */
+  border-top: 1px solid #9bb4b0;
+  border-bottom: 1px solid #9bb4b0;
+  margin-top: -4px;
+}
+
+/* a navigation links container that keeps everything lined up in a row */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  font-size: 22px;
   margin: 0;
-  padding: 0;
+  padding: 12px 0;
 }
 
-header {
-  text-align: center;
-  padding-bottom: 0;
-  margin: 0;
+/* each nav item aligns the text with the dividers */
+.nav-links li {
+  display: flex;
+  align-items: center;
 }
 
-.banner {
-  position: relative;
+/* actual link styling which keeps it bold, and no underline */
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1b1b1b;
 }
 
-.banner img {
+/* divider line between links */
+.divider {
+  color: #4d4d4d;
+  font-weight: bold;
+}
+
+
+/* some main layout changes with css to create the area box with a grayish color, and center them with padding and borders */
+main {
+  max-width: 780px;
+  margin: 25px auto;
+  background-color: #d9eceb; /* center panel */
+  padding: 22px 28px 28px;
+  border: 1px solid #9bb4b0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/*  */
+.content-box {
+  background-color: #f2f5f5;
+  padding: 22px;
+  border: 1px solid #222;
+  border-radius: 0; /* squared corners */
+  box-shadow: none;
   width: 100%;
+  box-sizing: border-box;
+}
+
+/* this is the starfish image and the text's wrap around it */
+.fish1 {
+  float: left;
+  width: 160px;
   height: auto;
+  margin: 0 10px 5px 0; /* tighter right and bottom margins */
+  border: 1px solid #444;
+  border-radius: 0;
+}
+
+/* adjusts .index(home) */
+.index p {
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+/* adjusts the .history(story) */
+.history::after {
+  content: "";
   display: block;
+  clear: both;
 }
 
-.wrapper {
-    background-color: aliceblue;
-    width: 600px;
-    margin: 0 auto;
+/* adjusts the lists spacing */
+.facts ul {
+  padding-left: 20px;
 }
 
-nav ul {
-    text-align: center;
-    padding-left: 0;
+/* ===== Form ===== */
+form {
+  width: 100%;
+  margin-top: 15px;
 }
 
-
-nav ul li {
-    display: inline-block;
-    width: 75px;
-    border-right: 1px solid#555;
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #222;
+  border-radius: 0; /* squared */
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  background-color: #ffffff;
 }
 
-nav ul li:last-child {
-    border-right: none;
- /* visibility: hidden; */
+/* text area alignment */
+form textarea {
+  resize: vertical;
 }
 
-.box-model {
-    background-color: rgb(238, 245, 108);
-    width: 600px;
+/* this is the buttons appearance in the form */
+form button {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: transparent;
+  color: #111;
+  border: 1px solid #222;
+  border-radius: 0; /* squared button */
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.box-model :first-child {
-    width: 300px;
-    background:  rgb(255, 60, 0);
+form button:hover {
+  background-color: #e1f0ef;
 }
 
-.box-model :last-child {
-    width: 300px;
-    background-color: rgb(255, 174, 0);
-}
-
-.box {
-    float: left;
-    padding: 10px;
-    /*margin: 20px 100px;*/
-    border: 4px dotted red;
-}
-
-.image {
-    height: 100px;
-    width: 100px;
-    float: left;
-}
-
-hr {
-    clear: left;
+/* stylizing the radio group to make space */
+.radio-group {
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 
-.stage {
-    height: 500px;
-    width: 500px;
-    background-color: rgb(245, 212, 161);
-    position: relative;
+/* hide the legend (still keeps accessibility tho) */
+.radio-group legend {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
 }
 
-.prop {
-    height: 100px;
-    width: 100px;
-    background-color: blueviolet;
-    position: absolute;
-    top: 10px;
-    left: 250px;
+/* bold option text, circle to the right, tidies gaps aswell */
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;          /* Yes / No / Maybe look bold */
+  margin-right: 28px;        /* spacing between options */
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+/* put a little air between the word and the circle */
+.radio-group label input[type="radio"] {
+  margin-left: 8px;
+  transform: scale(1);      
+}
+
+
+/* footer style for the copyright ill change later this morning */
+footer {
+  text-align: right;
+  padding: 12px 28px;
+  background-color: #d3e4e2;
+  color: #222;
+  font-size: 0.9rem;
+  border-top: 1px solid #9bb4b0;
 }
