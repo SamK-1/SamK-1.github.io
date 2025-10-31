@@ -16,12 +16,18 @@ header {
 /* WHY CANT I UNCROP THE BOTTOM OF THE IMG MAN */
 .cover {
   position: relative;
+  width: 100%;
+  height: 140px;        
+  overflow: hidden;
 }
 /* IM GONNA CRASH OUT AAAA */
 .cover img {
-  width: 100%;
-  height: auto;
+  width: 100%;        
+  height: auto;         
+  max-height: 300px;    
+  object-fit: cover;    
   display: block;
+  image-rendering: auto;
 }
 
 /* site title properties */
@@ -123,7 +129,7 @@ main {
   padding-left: 20px;
 }
 
-/* ===== Form ===== */
+/* just the forms size */
 form {
   width: 100%;
   margin-top: 15px;
@@ -196,10 +202,32 @@ form button:hover {
 
 /* footer style for the copyright ill change later this morning */
 footer {
-  text-align: right;
-  padding: 12px 28px;
-  background-color: #d3e4e2;
-  color: #222;
-  font-size: 0.9rem;
-  border-top: 1px solid #9bb4b0;
+  text-align: center;
+  padding: 10px;
+  background-color: #aad4cf;
+  margin-top: 20px;
 }
+
+/*        THIS SECTION WAS USED TO MAX A BOX AROUND THE ENTIRE CONTACT FORM            */
+
+/* ===== Contact Form Box ===== */
+#contact {
+  margin-top: 25px;
+  padding: 0;
+}
+
+.contact-me {
+  background-color: #d9eceb;   /* same tone as main panel */
+  border: 1px solid #9bb4b0;   /* subtle border like other sections */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  padding: 25px 30px;          /* spacing inside box */
+  max-width: 780px;
+  margin: 0 auto 25px;         /* centers box & adds space below */
+}
+
+.contact-me h2 {
+  margin-top: 0;
+  text-align: left;
+}
+
+
