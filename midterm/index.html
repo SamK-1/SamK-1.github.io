@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="banner">
-      <img src="images/lone-starfish-wide.jpg" alt="Background">
+      <img src="images/lone-starfish-wide.jpg" alt="Lone starfish banner">
       <h1 class="site-title">Lone Starfish</h1>
     </div>
   </header>
@@ -27,15 +27,15 @@
 
     <section id="home" class="index">
       <h2>Life of a Starfish</h2>
-      <img src="images/lone-starfish.jpg" alt="Starfish" class="fish1">
+      <img src="images/lone-starfish.jpg" alt="Close-up of a starfish" class="fish1">
       <p>
         Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-            </p>
+      </p>
     </section>
 
     <section id="story" class="history">
-        <h2>Facts About Starfish</h2>
-         <ul>
+      <h2>Facts About Starfish</h2>
+      <ul>
             <li>
               Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.
             </li>
@@ -48,47 +48,42 @@
             <li>
               Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
             </li>
-                </ul>
+      </ul>
     </section>
 
     <section id="contact">
-      <h2>Contact to learn more</h2>
+      <h2>Contact us to learn more</h2>
       <div class="contact-me">
-        <form>
+        <form action="#" method="post">
           <label for="name">Your Name</label><br>
-          <input type="text" id="name" name="name"><br><br>
+          <input type="text" id="name" name="name" required><br><br>
 
           <label for="email">Your Email</label><br>
-          <input type="email" id="email" name="email"><br><br>
+          <input type="email" id="email" name="email" required><br><br>
 
           <label for="message">Your Message</label><br>
           <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+          <fieldset class="radio-group">
+            <legend>Ready to dive in with the starfish?</legend>
+            <label for="dive-yes">Absolutely!
+              <input type="radio" id="dive-yes" name="dive" value="yes">
+            </label>
+            <label for="dive-no">Not today
+              <input type="radio" id="dive-no" name="dive" value="no">
+            </label>
+            <label for="dive-maybe">Maybe if the tide’s right
+              <input type="radio" id="dive-maybe" name="dive" value="maybe">
+            </label>
+          </fieldset>
+
+          <button type="submit">Submit Message</button>
         </form>
       </div>
     </section>
 
-      <div class="radio-group">
-        <p>
-          Ready to dive in with the starfish?
-            </p>
-         <label>Absolutely! <input type="radio" name="dive" value="yes"></label>
-          <label>Not today <input type="radio" name="dive" value="no"></label>
-         <label>Maybe if the tide's right <input type="radio" name="dive" value="maybe"></label>
-
-          </div>
-
-
-
     <!-- basically a small line before the footer comes kinda more professional i guess? -->
     <hr aria-hidden="true">
-
-    <div class="stage"></div>
-    <div class="prop"></div>
-
-    <div class="float clearfix"></div>
-    <div class="image"></div>
-    <p>...</p>
-
 
   </main>
 
