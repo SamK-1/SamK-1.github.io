@@ -1,7 +1,7 @@
 /* main typeface used */
 body {
   font-family: 'Times New Roman', Times, serif;
-  background-color: #94c7c2; /* softer teal */
+  background-color: #aad4cf; 
   margin: 0;
   padding: 0;
   color: #222;
@@ -16,14 +16,12 @@ header {
 /* WHY CANT I UNCROP THE BOTTOM OF THE IMG MAN */
 .cover {
   position: relative;
-  overflow: hidden;
 }
 /* IM GONNA CRASH OUT AAAA */
 .cover img {
-  width: 66.3%;
-  height: 66.3%;
-  object-fit: cover;          /* no stretching */
-  object-position: center 60%;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* site title properties */
@@ -32,10 +30,10 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #f3f3f3;
-  font-size: 48px;
+  color: #fff;
+  font-size: 46px;
   font-weight: 600;
-  letter-spacing: 1px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 /* nav bar pos and color */
@@ -93,8 +91,6 @@ main {
   background-color: #f2f5f5;
   padding: 22px;
   border: 1px solid #222;
-  border-radius: 0; /* squared corners */
-  box-shadow: none;
   width: 100%;
   box-sizing: border-box;
 }
@@ -102,7 +98,7 @@ main {
 /* this is the starfish image and the text's wrap around it */
 .fish1 {
   float: left;
-  width: 160px;
+  width: 190px;
   height: auto;
   margin: 0 10px 5px 0; /* tighter right and bottom margins */
   border: 1px solid #444;
@@ -176,12 +172,12 @@ form button:hover {
 
 /* hide the legend (still keeps accessibility tho) */
 .radio-group legend {
-  position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0 0 0 0);
-  white-space: nowrap; border: 0;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #111;
 }
+
 
 /* bold option text, circle to the right, tidies gaps aswell */
 .radio-group label {
