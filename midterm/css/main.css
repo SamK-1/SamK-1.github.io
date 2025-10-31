@@ -176,7 +176,7 @@ form button:hover {
 }
 
 
-/* hide the legend (still keeps accessibility tho) */
+/* SHOW the legend (still keeps accessibility tho) */
 .radio-group legend {
   font-weight: bold;
   margin-bottom: 8px;
