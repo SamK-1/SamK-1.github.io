@@ -81,17 +81,18 @@
             <!-- about me page -->
 
             <!-- section for about us page, and images added to it aswell with lorem ipsum text added for "filler" text to give an example  -->
-            <section class="about_us" id="about">
-                    <div class="contains_about_us">
-                        <!-- the image for this page + class + the src(source) -->
-                        <div class="aboutus_img">
-                            <img src="assets/about-us.jpg" alt="about us img">
-                        </div>
-                    <!-- filler content added(lorem) -->
-                        <div class="filler_content">
-                            <h2>
-                                About Us
-                                </h2>
+                        <section class="about_us" id="about">
+                        <div class="contains_about_us">
+                            <!-- the image for this page + class + the src(source) -->
+                            <div class="aboutus_img">
+                                <!-- added lazy loading because it's not that important so page loads faster basically -->
+                            <img src="assets/about-us.jpg" alt="Three Star Media team in office" loading="lazy">
+                            </div>
+                            <!-- filler content added(lorem) -->
+                            <div class="filler_content">
+                                 <h2>
+                                      About Us
+                                  </h2>
                             <p>
                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et cum soluta nam possimus ipsam, rerum fuga eveniet vitae ex mollitia quis impedit, sit in, optio rem quisquam totam! Mollitia!
                             </p>
@@ -115,9 +116,9 @@
              <!-- grid -->
             <div class="services-grid">
                 <!-- bigger services img or class for these next 2-->
-                <article class="sevices_big">
+                <article class="services_big">
                     <!-- digitals -->
-                    <img src="assets/digital.jpg" alt="Digital service">
+                    <img src="assets/digital.jpg" alt="Digital service" loading="lazy">
                     <div>
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -127,7 +128,7 @@
                 </article>
 
                 <article class="services_big">
-                    <img src="assets/marketing.jpg" alt="Marketing img">
+                    <img src="assets/marketing.jpg" alt="Marketing img" loading="lazy">
                     <div>
                         <h3>Marketing</h3>
                         <p>
@@ -140,7 +141,7 @@
                 </article>
                 <!-- next 3 articles of VFX, WEBDEV, AND PRINTING SERVICES -->
                 <article class="services">
-                    <img src="assets/video.jpg" alt="VFX img">
+                    <img src="assets/video.jpg" alt="VFX img" loading="lazy">
                     <div>
                         <h3>
                             Video Production
@@ -155,7 +156,7 @@
                 </article>
                 <!-- these last 3 sections have a "services" class instead of "services_big" because the other 2 take up more space in the given mockup but tldr this just means theyre bigger lmao -->
                 <article class="services">
-                    <img src="assets/web.jpg" alt="UX UI img">
+                    <img src="assets/web.jpg" alt="UX UI img" loading="lazy">
                     <div>
                         <h3>
                             Web Development
@@ -170,7 +171,7 @@
                 </article>
 
                     <article class="services">
-                        <img src="assets/print.jpg" alt="printing img">
+                        <img src="assets/print.jpg" alt="printing img" loading="lazy">
                         <div>
                             <h3>
                                     Print
@@ -193,7 +194,7 @@
 
         <!-- contains team section, and the members of the team + lorem filler. Div, and another # href to not cause a refresh -->
         <section class="vision">
-                <img src="assets/vision.jpg" alt="vision bg" class="vision_bg">
+                <img src="assets/vision.jpg" alt="vision bg" class="vision_bg" loading="lazy">
 
                 <div class="container">
                     <h2>Our Vision</h2>
@@ -216,7 +217,7 @@
 
                         <article class="homie">
                             <!-- so this is my homie bobby over here + filler text-->
-                            <img src="assets/bob.jpg" alt="Bob Rite">
+                            <img src="assets/bob.jpg" alt="Bob Rite" loading="lazy">
                             <div>
                                 <h3>
                                         Bob Rite
@@ -233,7 +234,7 @@
 
                         <article class="homie">
                             <!-- this is my 2nd homie John Doe + filler text-->
-                            <img src="assets/john.jpg" alt="John Doe">
+                            <img src="assets/john.jpg" alt="John Doe" loading="lazy">
                             <div>
                                 <h3>
                                      John Doe
