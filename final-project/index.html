@@ -10,15 +10,11 @@
     
 
 
-    <!-- site header -->
-
-<!-- header and main logo -->
     <header class="site-header">
         <div class="container header-inner">
             <a href="#" class="logo">
                 <img src="assets/logo.png" alt="Three Media Star logo">
             </a>
-            <!-- nav bar clicks -->
             <nav class="main-nav">
                 <ul>
                     <li>
@@ -44,9 +40,9 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <!-- search button -->
             <form class="search-form">
-                <input type="search" placeholder="Search">
+                <label for="search">Search</label>
+                <input type="search" placeholder="Search" id="search">
                 <button type="submit">
                         Search
                     </button>
@@ -57,20 +53,16 @@
 
 
     
-    <!-- index or main -->
-
-      <!-- basically main content, its the title and a paragraph with lorem slapped on top and a banner image. -->
-        <section class="index" id="home">
+    <section class="index" id="home">
                 <img src="assets/main-banner.jpg" alt="office" class="mainbg">
                 <div class="main_content">
                     <h1>
-                           Welcome to Three Star Media
+                            Welcome to Three Star Media
                         </h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laudantium magnam rem, cumque quae soluta culpa? Corrupti amet inventore, perspiciatis maxime rem quas, doloremque molestiae repellendus vel tenetur tempore nulla.
                         </p>
-                        <!-- link href -->
-                    <a href="#contact" class="button">
+                        <a href="#contact" class="button">
                         Connect with us
                       </a>
                 </div>
@@ -78,21 +70,15 @@
 
 
 
-         <!-- about me page -->
-
-            <!-- section for about us page, and images added to it aswell with lorem ipsum text added for "filler" text to give an example  -->
-                        <section class="about_us" id="about">
+         <section class="about_us" id="about">
                         <div class="contains_about_us">
-                            <!-- the image for this page + class + the src(source) -->
                             <div class="aboutus_img">
-                                <!-- added lazy loading because it's not that important so page loads faster basically -->
-                            <img src="assets/about-us.jpg" alt="Three Star Media team in office" loading="lazy">
+                                <img src="assets/about-us.jpg" alt="Three Star Media team in office" loading="lazy">
                             </div>
-                            <!-- filler content added(lorem) -->
                             <div class="filler_content">
                                  <h2>
-                                      About Us
-                                  </h2>
+                                     About Us
+                                 </h2>
                             <p>
                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et cum soluta nam possimus ipsam, rerum fuga eveniet vitae ex mollitia quis impedit, sit in, optio rem quisquam totam! Mollitia!
                             </p>
@@ -100,32 +86,24 @@
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, similique. Ea amet officia dolore ullam qui, rerum laboriosam, ab excepturi sit quasi, modi iste corporis vitae. Facilis cumque consequatur beatae!
                                 </p>
                         </div>
-                              </div>
-                                  </section>
+                             </div>
+                                 </section>
 
                  
 
 
-          <!-- services page -->
-
-                 <!-- container for the services part of the page -->
-                 <section class="services" id="services">
+          <section class="services" id="services">
         <div class="container">
             <h2>
                 Our Services
              </h2>
-             <!-- alot of articles -->
-             <!-- grid -->
-            <div class="services_layer">
-                <!-- bigger services img or class for these next 2-->
+             <div class="services_layer">
                 <article class="services_big">
-                    <!-- digitals -->
                     <img src="assets/digital.jpg" alt="Digital service" loading="lazy">
                     <div>
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <!-- using a # href so that when we click it doesnt just refresh the page and takes us to the top of the page -->
-                        <a href="#" class="button">Digital Plans</a>
+                        <a href="#" class="button">Digital Plans &#9658;</a>
                     </div>
                 </article>
 
@@ -137,11 +115,10 @@
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit esse, laboriosam harum placeat cupiditate ipsa veritatis labore et quod consequatur. Beatae, nam tempore eaque ratione velit libero fugit repellat vel?
                          </p>
                         <a href="#" class="button">
-                            Marketing Plans
+                            Marketing Plans &#9658;
                          </a>
                     </div>
                 </article>
-                <!-- next 3 articles of VFX, WEBDEV, AND PRINTING SERVICES -->
                 <article class="services">
                     <img src="assets/video.jpg" alt="VFX img" loading="lazy">
                     <div>
@@ -152,11 +129,10 @@
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quo obcaecati reprehenderit officiis aperiam, laudantium saepe incidunt mollitia exercitationem minus excepturi ullam, nam quas possimus inventore earum neque illum cumque!
                          </p>
                         <a href="#" class="button">
-                                Video Plans
+                                Video Plans &#9658;
                             </a>
                     </div>
                 </article>
-                <!-- these last 3 sections have a "services" class instead of "services_big" because the other 2 take up more space in the given mockup but tldr this just means theyre bigger lmao -->
                 <article class="services">
                     <img src="assets/web.jpg" alt="UX UI img" loading="lazy">
                     <div>
@@ -167,7 +143,7 @@
                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut repellat, at vitae repellendus sed maiores error vero totam odio, aliquam eos non neque, officiis ex nobis natus blanditiis assumenda. Quo?
                              </p>
                         <a href="#" class="button">
-                              Web Plans
+                             Web Plans &#9658;
                             </a>
                     </div>
                 </article>
@@ -176,13 +152,13 @@
                         <img src="assets/print.jpg" alt="printing img" loading="lazy">
                         <div>
                             <h3>
-                                    Print
+                                     Print
                                 </h3>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quaerat atque reprehenderit doloremque sequi deserunt sed laborum, alias voluptates eos harum, maxime corporis? Accusantium nam, qui corporis voluptates odio nisi.
                             </p>
                             <a href="#" class="button">
-                                    Print Plans
+                                     Print Plans &#9658;
                                 </a>
                         </div>
                     </article>
@@ -195,10 +171,7 @@
 
 
 
-     <!-- vision section -->
-
-        <!-- contains team section, and the members of the team + lorem filler. Div, and another # href to not cause a refresh -->
-        <section class="vision">
+     <section class="vision">
                 <img src="assets/vision.jpg" alt="vision bg" class="vision_bg" loading="lazy">
 
                 <div class="container">
@@ -216,20 +189,18 @@
                 <div class="container">
                     <h2>
                         Our Team
-                     </h2>
+                      </h2>
 
                     <div class="team_layer">
 
                         <article class="homie">
-                            <!-- so this is my homie bobby over here + filler text-->
                             <img src="assets/bob.jpg" alt="Bob Rite" loading="lazy">
                             <div>
                                 <h3>
-                                        Bob Rite
+                                         Bob Rite
                                     </h3>
-                                    <!-- bobby's famous sheheee -->
-                                <p class="occupation">
-                                        CFO and Co-owner
+                                    <p class="occupation">
+                                         CFO and Co-owner
                                     </p>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus cupiditate, odio possimus ipsa veritatis nihil doloremque quae incidunt perspiciatis quas, neque accusantium labore eveniet fugiat amet tenetur, soluta quia.
@@ -238,18 +209,16 @@
                         </article>
 
                         <article class="homie">
-                            <!-- this is my 2nd homie John Doe + filler text-->
                             <img src="assets/john.jpg" alt="John Doe" loading="lazy">
                             <div>
                                 <h3>
                                      John Doe
                                     </h3>
-                                    <!-- oh ma gawd john's ripped w cash -->
-                                <p class="occupation">
-                                        CEO and Co-owner
+                                    <p class="occupation">
+                                         CEO and Co-owner
                                     </p>
                                 <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam saepe atque pariatur nostrum, accusamus suscipit fuga doloremque earum quos delectus excepturi beatae quae, minima, necessitatibus dolore eius perspiciatis non.
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam saepe atque pariatur nostrum, accusamus suscipit fuga doloremque earum quos delectus excepturi beatae quae, minima, necessitatibus dolore eius perspiciatis non.
                                     </p>
                             </div>
                         </article>
@@ -260,113 +229,109 @@
 
 
 
-          <!-- contact section -->
-            <!-- contacting the company basically require labels and sections for name, email, message, and a button for submission -->
-            <section class="contact" id="contact">
+          <section class="contact" id="contact">
         <div class="container contact_msg">
 
             <div class="form">
                 <h2>
                       Contact Us
                  </h2>
+                 <h3>
+                    Send us a message
+                 </h3>
 
                 <form>
                     <label for="fullname">
-                          Full Name
+                         Full Name
                         </label>
-                    <!-- full name label with asterisk -->
                     <input type="text" id="fullname" name="fullname" required>
-                    <!-- email label with asterisk -->
+                    
                     <label for="email">
-                          Email
+                         Email
                         </label>
                     <input type="email" id="email" name="email" required>
-                        <!-- msg label -->
-                    <label for="message">
-                          Message
+                        <label for="message">
+                         Message
                         </label>
                     <textarea id="message" name="message" rows="5" required></textarea>
-                        <!-- a button for submitting -->
-                    <button type="submit" class="button">
-                           Send
+                        <button type="submit" class="button">
+                            Send
                         </button>
                 </form>
             </div>
 
-            <!-- google framework starts here -->
-             <div class="location">
-                  <h2>
-                         Location
-                      </h2>
-
-                <!-- iframe for google maps(I yoinked it from google) 600px width, and 450px height. No border, and no prompt for fullscreen with loading lazy slapped on top so site loads faster. -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9973678324423!2d-75.7591079!3d45.3488654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce071f17f40025%3A0x477ba42e3bbc9d5f!2s1385%20Woodroffe%20Ave%2C%20Ottawa%2C%20ON%20K2G%201V8!5e0!3m2!1sen!2sca!4v1764748633042!5m2!1sen!2sca"
-               
-                width="600"
-
-                height="450"
-
-                style="border:0;"
-
-                allowfullscreen=""
-
-                loading="lazy"
-
-                referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                             </div>
-                                    </div>
-                                           </section>
-
-
-               <!-- hours of work table with tds and ths -->
-                <section class="hours">
+               <section class="hours">
                     <div class="container">
                         <h2>
                             Hours of Operation
                             </h2>
 
                         <table>
-                            <tr>
-                                <th>
-                                    Days
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Days
                                     </th>
-                                <th>
-                                    Hours
+                                    <th>
+                                        Hours
                                     </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Monday - Friday
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Monday - Friday
                                     </td>
-                                <td>
-                                    9 AM - 6 PM
+                                    <td>
+                                        9 AM - 6 PM
                                     </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Saturday - Sunday
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Saturday - Sunday
                                     </td>
-                                <td>
-                                    Closed
+                                    <td>
+                                        Closed
                                     </td>
-                            </tr>
+                                </tr>
+                            </tbody>
                         </table>
+                        
+                         <div class="location">
+                            <h2>
+                                    Location
+                                </h2>
+        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9973678324423!2d-75.7591079!3d45.3488654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce071f17f40025%3A0x477ba42e3bbc9d5f!2s1385%20Woodroffe%20Ave%2C%20Ottawa%2C%20ON%20K2G%201V8!5e0!3m2!1sen!2sca!4v1764748633042!5m2!1sen!2sca"
+                        
+                        width="600"
+        
+                        height="450"
+        
+                        style="border:0;"
+        
+                        allowfullscreen=""
+        
+                        loading="lazy"
+        
+                        referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            </div>
+
                     </div>
                 </section>
 
+             
+                                    </div>
+                                     </section>
 
 
-
- <!-- footer + copyright-->
-
-    <footer class="footer">
+ <footer class="footer">
         <div class="container">
             <p>
-                      &copy; Copyright Three Star Media, 2020
+                      © Copyright Three Star Media, 2020
                  </p>
-                 <!-- I NOTICED THAT SNEAKY UNDERLINE ON UNSPLASH HAAHHA AND DECIDED YEP IT HAS TO TAKE U TO THAT SITE -->
-            <p>
+                 <p>
                       All images are taken from <a href="https://unsplash.com" target="_blank">Unsplash</a>
                 </p>
         </div>
