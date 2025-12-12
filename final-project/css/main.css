@@ -1,5 +1,5 @@
 /* =========================================
-   RESET & BASICS
+   reset & basics
    ========================================= */
 * {
     box-sizing: border-box;
@@ -21,7 +21,7 @@ img {
 }
 
 /* =========================================
-   UTILS
+   utils
    ========================================= */
 .container {
     max-width: 1200px;
@@ -29,19 +29,19 @@ img {
     padding: 0 20px;
 }
 
-/* Standard Button */
+/* standard button */
 .button {
     display: inline-block;
-    background-color: #222; /* Black */
-    color: #fff; /* White Text */
-    padding: 12px 25px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 25px;
     text-decoration: none;
     font-weight: bold;
     border: none;
     cursor: pointer;
     margin-top: 15px;
     font-size: 0.9rem;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 .button:hover {
@@ -50,7 +50,7 @@ img {
 
 h1, h2, h3 {
     color: #000;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -59,11 +59,11 @@ h2 {
 }
 
 /* =========================================
-   HEADER
+   header
    ========================================= */
 .site-header {
     background-color: #000;
-    padding: 20px 0;
+    padding: 15px 0;
     color: #fff;
 }
 
@@ -71,89 +71,74 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .main-nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .main-nav a {
-    color: #ccc;
+    color: #ddd;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .main-nav a:hover {
-    color: #f8ce57; /* Gold Hover */
+    color: #f8ce57;
 }
 
-/* Search bar hidden labels */
-.search-form {
-    display: flex;
-    align-items: center;
-}
+/* search form */
+.search-form { display: flex; align-items: center; }
 .search-form label { display: none; }
 .search-form input { padding: 5px; }
 .search-form button { padding: 5px 10px; background: #333; color: #fff; border: none; }
 
 /* =========================================
-   HERO / INDEX SECTION
+   hero / index
    ========================================= */
 .index {
     position: relative;
-    /* Space at bottom for the overlap to breathe */
+    /* space for overlap */
     margin-bottom: 60px;
 }
 
 .mainbg {
     width: 100%;
-    height: auto;
-    object-fit: cover;
     max-height: 500px;
+    object-fit: cover;
 }
 
 .main_content {
-    background-color: #f8ce57; /* The Gold Color */
+    background-color: #f8ce57; /* gold */
     padding: 40px;
-    width: 80%; 
+    width: 80%;
     max-width: 800px;
-    margin: 0 auto; /* Center the box */
-    
-    /* Overlap Logic */
-    position: relative;
-    top: -50px; 
-    margin-bottom: -50px; 
-    
+    margin: 0 auto;
     text-align: center;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.main_content h1 {
-    font-size: 2.5rem;
-    color: #fff; /* White title as seen in hero image */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-}
-
-.main_content p {
+.main_content h1, .main_content p {
     color: #fff;
-    margin-bottom: 20px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Hero button: Black with Gold Arrow/Text */
 .main_content .button {
     background-color: #000;
     color: #f8ce57;
 }
 
 /* =========================================
-   ABOUT US SECTION
+   about us
    ========================================= */
 .about_us {
-    background-color: #ffeeb0; /* Pale Yellow BG */
+    background-color: #ffeeb0; /* pale yellow */
     padding: 60px 0;
 }
 
@@ -167,53 +152,47 @@ h2 {
 .filler_content { flex: 1; }
 
 /* =========================================
-   SERVICES SECTION
+   services
    ========================================= */
 .services {
-    background-color: #fffcf2; /* Very light cream */
+    background-color: #fffcf2;
     padding: 60px 0;
 }
 
 .services_layer {
     display: grid;
-    /* 6 columns allows us to split 50% (span 3) and 33% (span 2) */
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
 }
 
-/* Card Styling */
 .services_layer article {
-    background-color: #f8ce57; /* Gold Card Background */
+    background-color: #f8ce57; /* gold bg */
     display: flex;
     flex-direction: column;
 }
 
-/* --- THE GRID FIX --- */
-/* First 2 items (Digital, Marketing) take 50% width */
+/* top 2 items (50% each) */
 .services_layer article:nth-child(1),
 .services_layer article:nth-child(2) {
     grid-column: span 3;
 }
 
-/* Next 3 items (Video, Web, Print) take 33% width */
+/* bottom 3 items (33% each) */
 .services_layer article:nth-child(3),
 .services_layer article:nth-child(4),
 .services_layer article:nth-child(5) {
     grid-column: span 2;
 }
 
-/* Ensure images take the "entire square" width of the card */
 .services_layer img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    display: block; /* Removes tiny bottom gap */
 }
 
-/* Padding for the text inside the card */
 .services_layer div {
     padding: 25px;
-    flex: 1; /* Pushes button to bottom if text is short */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -226,11 +205,11 @@ h2 {
 }
 
 /* =========================================
-   VISION SECTION (FIXED - NO SQUARE)
+   vision (fixed: no box)
    ========================================= */
 .vision {
     position: relative;
-    background-color: #222;
+    background-color: #000;
     margin: 50px 0;
 }
 
@@ -238,63 +217,103 @@ h2 {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    opacity: 0.6; /* Darkens image so text is readable */
+    opacity: 0.5;
     display: block;
 }
 
-/* Text Overlay - NO BACKGROUND BOX */
+/* centered text, no background box */
 .vision .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 800px;
     width: 90%;
-    /* Removed background-color: #f8ce57 */
+    max-width: 800px;
 }
 
 .vision h2 {
-    color: #fff; /* White Text */
+    color: #fff;
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
 }
 
 .vision p {
-    color: #fff; /* White Text */
+    color: #fff;
     font-size: 1.1rem;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+.vision .button {
+    background-color: #000;
+    color: #fff;
 }
 
 /* =========================================
-   TEAM SECTION
+   team (fixed: checkerboard layout)
    ========================================= */
 .team {
     background-color: #fffcf2;
     padding: 60px 0;
 }
 
+.team h2 {
+    margin-bottom: 40px;
+}
+
+/* stack the rows vertically */
 .team_layer {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 0; /* seamless checkerboard */
 }
 
 .homie {
-    flex: 1;
-    background-color: #f8ce57; /* Gold BG */
+    display: flex;
+    width: 100%;
 }
 
+/* image takes 50% */
 .homie img {
-    width: 100%;
-    height: 350px;
+    width: 50%;
+    height: 400px; /* force a nice height */
     object-fit: cover;
 }
 
-.homie div { padding: 25px; }
+/* text box takes 50% */
+.homie div {
+    width: 50%;
+    padding: 50px;
+    background-color: #ffeeb0; /* light yellow box from image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* alternating logic:
+   1st item: image left, text right (default)
+   2nd item: text left, image right (row reverse) 
+*/
+.homie:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.homie:nth-child(even) div {
+    background-color: #ffeeb0; 
+}
+/* you can tweak colors if rows alternate colors */
+
+.homie h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.occupation {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
 
 /* =========================================
-   CONTACT & HOURS
+   contact
    ========================================= */
 .contact {
     background-color: #fff;
@@ -302,14 +321,9 @@ h2 {
 }
 
 .contact_msg {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
-    flex-wrap: wrap;
-}
-
-.form {
-    flex: 1;
-    min-width: 300px;
 }
 
 .form input, .form textarea {
@@ -325,79 +339,65 @@ h2 {
     display: block;
 }
 
-/* THE BUTTON: Black BG, Orange Text */
 .form button[type="submit"] {
     background-color: #000;
-    color: #f8ce57; /* Orange Text */
+    color: #f8ce57;
     border: none;
     padding: 12px 30px;
-    font-size: 1rem;
     font-weight: bold;
-    margin-top: 10px;
+    font-size: 1rem;
 }
 
-/* Hours Table */
-.hours {
-    flex: 1;
-    min-width: 300px;
-}
-
-table {
+/* hours table */
+.hours table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
     background-color: #fffcf2;
+    margin-bottom: 20px;
 }
+.hours th { background-color: #f8ce57; padding: 10px; text-align: left; }
+.hours td { padding: 10px; border-bottom: 1px solid #ddd; }
 
-th {
-    background-color: #f8ce57; /* Gold Header */
-    padding: 12px;
-    text-align: left;
-}
-
-td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-.location iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
-}
+.location iframe { width: 100%; height: 300px; border: 0; }
 
 /* =========================================
-   FOOTER
+   ++++footer added 
    ========================================= */
 .footer {
     background-color: #222;
     color: #888;
-    padding: 40px 0;
+    padding: 30px 0;
     text-align: center;
 }
-
 .footer a { color: #f8ce57; text-decoration: none; }
 
 /* =========================================
-   MOBILE
+   mobile version touch
    ========================================= */
 @media (max-width: 768px) {
     .services_layer {
         display: flex;
-        flex-direction: column; /* Stack cards */
-    }
-    
-    .contains_about_us, .team_layer, .contact_msg, .header-inner {
         flex-direction: column;
     }
     
-    .main_content {
-        width: 90%;
-        top: -30px;
+    /* on mobile, stack team vertically: image top, text bottom */
+    .homie, .homie:nth-child(even) {
+        flex-direction: column;
+    }
+    .homie img, .homie div {
+        width: 100%;
+        height: auto;
+    }
+    .homie img {
+        height: 300px;
+    }
+    
+    .contains_about_us, .contact_msg, .header-inner {
+        flex-direction: column;
     }
     
     .main-nav ul {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
 }
